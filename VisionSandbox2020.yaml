@@ -1,0 +1,309 @@
+Version 2.0
+
+---
+Children:
+- Children:
+  - Children: []
+    Properties:
+      Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Send to SmartDashboard, validators: null, value: false}
+      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Default command parameters
+        validators: null
+        value: []
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: None}
+      Constants: !!robotbuilder.data.properties.ConstantsProperty
+        default: []
+        name: Constants
+        validators: null
+        value:
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_0,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_1,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_2,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_3,
+          type: int, value: '3'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_4,
+          type: int, value: '4'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_5,
+          type: int, value: '5'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_6,
+          type: int, value: '6'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_7,
+          type: int, value: '7'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DIGITAL_IO_8,
+          type: int, value: '8'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: ANALOG_INPUT_0,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: ANALOG_INPUT_1,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: ANALOG_INPUT_2,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: ANALOG_INPUT_3,
+          type: int, value: '3'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_0,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_1,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_2,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_3,
+          type: int, value: '3'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_4,
+          type: int, value: '4'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_5,
+          type: int, value: '5'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_6,
+          type: int, value: '6'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PCM_PORT_7,
+          type: int, value: '7'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_0,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_1,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_2,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_3,
+          type: int, value: '3'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_4,
+          type: int, value: '4'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_5,
+          type: int, value: '5'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_6,
+          type: int, value: '6'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_7,
+          type: int, value: '7'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_8,
+          type: int, value: '8'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PWM_PIN_9,
+          type: int, value: '9'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RIGHT_FRONT_MOTOR,
+          type: int, value: '11'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RIGHT_BACK_MOTOR,
+          type: int, value: '12'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: LEFT_FRONT_MOTOR,
+          type: int, value: '13'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: LEFT_BACK_MOTOR,
+          type: int, value: '14'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: PIGEON_IMU_CAN_ID,
+          type: int, value: '61'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: CANIFIER_CAN_ID,
+          type: int, value: '62'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: LEFT_DISTANCE_SENSOR_ID,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RIGHT_DISTANCE_SENSOR_ID,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RELAY_PIN_0,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RELAY_PIN_1,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RELAY_PIN_2,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: RELAY_PIN_3,
+          type: int, value: '3'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: VISION_TARGET_TOLERANCE_IN_INCHES,
+          type: double, value: '1.0'}
+    Base: Subsystem
+    Name: RobotConstants
+  - Children:
+    - Children: []
+      Properties:
+        PWM Pin: !!robotbuilder.data.properties.ChoicesProperty
+          choices: &id001 [PWM_PIN_0, PWM_PIN_1, PWM_PIN_2, PWM_PIN_3, PWM_PIN_4,
+            PWM_PIN_5, PWM_PIN_6, PWM_PIN_7, PWM_PIN_8, PWM_PIN_9]
+          default: PWM_PIN_0
+          name: PWM Pin
+          validators: null
+          value: PWM_PIN_0
+      Base: CT Servo
+      Name: leftServo
+    - Children: []
+      Properties:
+        PWM Pin: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: PWM_PIN_0
+          name: PWM Pin
+          validators: null
+          value: PWM_PIN_1
+      Base: CT Servo
+      Name: rightServo
+    Properties:
+      Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Send to SmartDashboard, validators: null, value: false}
+      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Default command parameters
+        validators: null
+        value: []
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: None}
+      Constants: !!robotbuilder.data.properties.ConstantsProperty
+        default: []
+        name: Constants
+        validators: null
+        value:
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: MIN_SERVO_ANGLE,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: MAX_SERVO_ANGLE,
+          type: int, value: '180'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: STOP_SERVO_ANGLE,
+          type: int, value: '90'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: SPEED_OFFSET,
+          type: int, value: '75'}
+    Base: Subsystem
+    Name: CameraDriveSystem
+  - Children: []
+    Properties:
+      Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Send to SmartDashboard, validators: null, value: false}
+      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Default command parameters
+        validators: null
+        value: []
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: None}
+      Constants: !!robotbuilder.data.properties.ConstantsProperty
+        default: []
+        name: Constants
+        validators: null
+        value:
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: VISION_DATA_TABLE_KEY,
+          type: String, value: datatable}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: TABLE_ENTRY_TARGET_STATE,
+          type: String, value: targState}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: TABLE_ENTRY_DIST_TO_TARGET,
+          type: String, value: distTargetIn}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: TABLE_ENTRY_HORIZ_OFFSET_INCHES,
+          type: String, value: horzOffToIn}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: DEFAULT_TABLE_ENTRY_VALUE,
+          type: int, value: '42069666'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: TARGET_STATE_SEARCHNG,
+          type: int, value: '0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: TARGET_STATE_ACQUIRING,
+          type: int, value: '1'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: TARGET_STATE_LOCKED,
+          type: int, value: '2'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: MINIMUM_TARGET_DISTANCE,
+          type: int, value: '18'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: MAXIMUM_TARGET_DISTANCE,
+          type: int, value: '48'}
+    Base: Subsystem
+    Name: VisionProcessor
+  Properties: {}
+  Base: Subsystems
+  Name: Subsystems
+- Children:
+  - Children: []
+    Properties:
+      PORT: !!robotbuilder.data.properties.ChoicesProperty
+        choices: ['0', '1']
+        default: '0'
+        name: PORT
+        validators: null
+        value: '0'
+    Base: CT Xbox Controller
+    Name: xbox
+  Properties: {}
+  Base: OI
+  Name: Operator Interface
+- Children:
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: CameraDriveSystem}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: []
+        name: Parameter presets
+        validators: null
+        value: []
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: moveCameraForward
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: CameraDriveSystem}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: []
+        name: Parameter presets
+        validators: null
+        value: []
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: moveCameraBackward
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: CameraDriveSystem}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: []
+        name: Parameter presets
+        validators: null
+        value: []
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: stopCamera
+  Properties: {}
+  Base: Commands
+  Name: Commands
+Properties:
+  Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Export Commands, validators: null, value: true}
+  Autonomous command parameters: !!robotbuilder.data.properties.ParametersProperty
+    default: []
+    name: Autonomous command parameters
+    validators: null
+    value: []
+  Java Package: !!robotbuilder.data.properties.StringProperty {default: org.usfirst.frc0000,
+    name: Java Package, validators: null, value: org.usfirst.frc2228}
+  Use Default Java Package: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Use Default Java Package, validators: null, value: true}
+  Team Number: !!robotbuilder.data.properties.IntegerProperty {default: 0, name: Team Number,
+    validators: null, value: 2228}
+  Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
+    name: Export Subsystems, validators: null, value: true}
+  Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
+    name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\ksymo\',
+    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\ksymo\'}
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\ksymo\FRCProjects',
+    extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\ksymo\FRCProjects'}
+  Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+    name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
+Base: Robot
+Name: VisionSandbox2020
