@@ -152,7 +152,7 @@ Children:
           type: int, value: '180'}
         - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: STOP_SERVO_ANGLE,
           type: int, value: '90'}
-        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: SPEED_OFFSET,
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: INITIAL_SPEED_OFFSET,
           type: int, value: '75'}
     Base: Subsystem
     Name: CameraDriveSystem
@@ -192,6 +192,10 @@ Children:
           type: int, value: '18'}
         - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: MAXIMUM_TARGET_DISTANCE,
           type: int, value: '48'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: FINE_TARGET_TOLERANCE,
+          type: double, value: '1.0'}
+        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: COARSE_TARGET_TOLERANCE,
+          type: double, value: '2.5'}
     Base: Subsystem
     Name: VisionProcessor
   Properties: {}
@@ -207,7 +211,7 @@ Children:
         validators: null
         value: '0'
     Base: CT Xbox Controller
-    Name: xbox
+    Name: xboxIF
   Properties: {}
   Base: OI
   Name: Operator Interface
@@ -278,56 +282,6 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
     Name: StopCameraCommand
-  - Children: []
-    Properties:
-      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
-        name: Autonomous Selection, validators: null, value: false}
-      Parameters: !!robotbuilder.data.properties.ParametersProperty
-        default:
-        - &id002 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
-          type: double}
-        name: Parameters
-        validators: null
-        value:
-        - &id003 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
-          type: double}
-      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
-        name: Run When Disabled, validators: null, value: false}
-      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: None}
-      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: []
-        name: Parameter presets
-        validators: null
-        value: []
-      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
-        name: Button on SmartDashboard, validators: null, value: true}
-    Base: Timed Command
-    Name: TimedMoveCameraForwardCommand
-  - Children: []
-    Properties:
-      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
-        name: Autonomous Selection, validators: null, value: false}
-      Parameters: !!robotbuilder.data.properties.ParametersProperty
-        default:
-        - *id002
-        name: Parameters
-        validators: null
-        value:
-        - *id003
-      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
-        name: Run When Disabled, validators: null, value: false}
-      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: None}
-      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: []
-        name: Parameter presets
-        validators: null
-        value: []
-      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
-        name: Button on SmartDashboard, validators: null, value: true}
-    Base: Timed Command
-    Name: TimedMoveCameraBackwardCommand
   Properties: {}
   Base: Commands
   Name: Commands
